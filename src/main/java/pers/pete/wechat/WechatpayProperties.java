@@ -16,8 +16,44 @@ public class WechatpayProperties {
   private String mchId;
 
   /**
-   * 子商户号	.
+   * 密钥.
    */
-  private String subMchId;
+  private String apikey;
 
+  /**
+   * 回调地址.
+   */
+  private String notifyUrl;
+
+  public String getAppid() {
+    return appid;
+  }
+
+  public void setAppid(String appid) {
+    this.appid = appid;
+  }
+
+  public String getMchId() {
+    return mchId;
+  }
+
+  public void setMchId(String mchId) {
+    this.mchId = mchId;
+  }
+
+  public String getApikey() {
+    return apikey;
+  }
+
+  public void setApikey(String apikey) {
+    this.apikey = apikey;
+  }
+
+  public String getNotifyUrl() {
+    return notifyUrl;
+  }
+
+  public void setNotifyUrl(String notifyUrl) {
+    this.notifyUrl = notifyUrl;
+  }
 }

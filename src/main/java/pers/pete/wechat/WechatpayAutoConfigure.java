@@ -22,7 +22,8 @@ public class WechatpayAutoConfigure {
   @Bean
   @ConditionalOnMissingBean
   public WechatpayTemplate wechatpayTemplate() {
-    return new WechatpayTemplate();
+    return new WechatpayTemplate(properties.getAppid(), properties.getMchId(),
+      properties.getApikey(), properties.getNotifyUrl());
   }
 
 }
